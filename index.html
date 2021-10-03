@@ -14,7 +14,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>esWeb Arama</title>
         <script>
-
             function search()
             {
                 if(document.getElementById("stxt").value != "")
@@ -22,9 +21,11 @@
                     document.location.href = "https://www.google.com/search?q=" + document.getElementById("stxt").value
                 }
             }
-
             function onload(){
                 document.getElementById("stxt").value = "";
+            }
+            function mainPage(){
+                location.href = "https://www.sarpe.tk";
             }
         </script>
         <style>
@@ -151,6 +152,6 @@
             <input type="text" id="stxt" placeholder="Search..." value="">
             <input type="submit" id="sbtn" value="">
         </form>
-        <input type="button" onclick="location.href='www.sarpe.tk'" id="rt_btn" value="Return to home">
+        <input type="button" onclick="mainPage()" id="rt_btn" value="Return to home">
     </body>
 </html>
